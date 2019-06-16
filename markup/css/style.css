@@ -1,0 +1,275 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+body{
+	font:14px/20px Georgia,Tahoma,Arial,sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main-wrapper{
+	max-width: 100%;
+	margin: 0 auto;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+.header{
+	background: url(../images/top-bg.png) ;
+	border-bottom: 1px solid #594522;
+	padding: 0 0 1%;
+	box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.75);
+}
+.header-menu{
+	max-width: 100%;
+	padding: 4% 0 0;
+	margin: 0 0 5% 0;
+}
+.logo{
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+.logo h2{
+	margin: 0 0 5px 0;
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: bold;
+	color: #cfcdb4;
+	text-shadow: 4px 4px 2px #000;
+}
+.logo p a{
+	margin: 0;
+	font:italic 18px/20px Georgia;
+	color: #af9671;
+	text-shadow: 4px 3px 2px #000;
+}
+.contact {
+	float: right;
+	font:18px/20px Arial;
+}
+.contact  li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 0 0 30px;
+}
+.contact  li a{
+	text-decoration: none;
+	color: #af9671;
+}
+.top-content{
+	margin: 0;
+}
+.about-me, .designer{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 1.5% 0 0;
+	width: 49.8%;
+	color: #cfcdb4;
+}
+.designer{
+	padding: 0 0 0 1.5%;
+}
+.about-me h2,.designer h2,.portfolio h2,.box h2{
+	margin: 0 0 4%;
+	font:18px/20px Arial;
+	color:#ea9f3e;
+	text-transform: uppercase;
+}
+.about-me p,.designer p{
+	margin: 0 0 4%;
+	font:14px/20px Georgia;
+}
+.designer img{
+	float: left;
+	margin: 0 20px 0 0 ;
+	max-width: 100%;
+	height: auto;
+}
+.designer p a span,.box p a span,.box p span a{
+	color: #ea9f3e;
+}
+/*HEADER END____________________________*/
+
+/*CONTENT*/
+
+.portfolio{
+	background: #201b0e;
+	padding: 2% 0 1.7%;
+	border-bottom: 1px solid #594522;
+}
+.portfolio h2{
+	margin: 0 0 3%;
+}
+.screenshots{
+	max-width: 100%;
+}
+.block,.box{
+	display: inline-block;
+	vertical-align: top;
+	width: 31%;
+	margin-right: 3%;
+}
+.block:nth-child(3n+3),.box:nth-child(3n+3){
+	margin: 0;
+}
+.block a img{
+	width: 100%;
+	height: auto;
+	border: 1px solid #3c3218;
+	padding: 5px;
+	margin: 0 0 -1px;
+}
+.block h4,.box h4{
+	margin: 0;
+	font-weight: bold;
+	color: #af9671;
+}
+.block p,.box p{
+	margin: 0 0 9% 0;
+	font:14px/19px Georgia;
+	color: #cfcdb4;
+}
+.text-area{
+	background: #2d2413;
+	max-width: 100%;
+	padding: 2.3% 0 2.5%;
+	border-bottom: 1px solid #594522;
+}
+.text-area a{
+	color: #ea9f3e;
+}
+.box{
+	margin: 0 3% 1% 0;
+}
+.box h2{
+	display: inline-block;
+	vertical-align: top;
+	margin: 5% 0 9% 0;
+}
+.box > a img {
+    margin: 3% 1% 0;
+}
+.box2 > a img {
+    margin: 3% 7% 0 0;
+}
+.box3 > a img {
+    margin: 1% 5% 0 -1%;
+}
+.box ul{
+	margin: 16% 0 0 0;
+}
+.box li{
+	display: block;
+	margin: 0 0 5%;
+}
+.box li a {
+	color: #af9671;
+}
+.box li a img{
+	margin: 0 5% 0 0;
+}
+/*CONTENT END________________*/
+
+/*FOOTER*/
+.footer{
+	background: #201b0e;
+	padding: 3.5% 0;
+}
+.footer p a{
+	margin: 0;
+	color:#cfcdb4;
+}
+
+
+@media(max-width: 841px){
+	.container{
+		margin: 0;
+		width: 100%;
+		padding: 0 2%;
+	}
+	.header{
+		background-size: 100% 100%;
+	}
+	.about-me, .designer{
+		width: 47%;
+	}
+}
+@media(max-width: 702px){
+	.portfolio h2 {
+		text-align: center;
+	}
+	.block{
+		margin-right: 1%;
+	}
+	.box{
+		width: 29%;
+	}
+}
+@media(max-width: 566px){
+	.logo{
+		width: 100%;
+		text-align: center;
+		margin:0 0 3% 0;
+	}
+	.contact{
+		float: none;
+		text-align: center;
+	}
+	.contact li{
+		padding: 0 5%;
+	}
+	.designer img{
+		max-width: 50%;
+	}
+}
+@media(max-width: 320px){
+
+	.logo h2{
+		font-size: 26px;
+	}
+	.logo p a{
+		font-size: 14px;
+	}
+	.about-me h2, .designer h2, .portfolio h2, .box h2{
+		font-size: 14px;
+	}
+	.about-me p, .designer p{
+		font: 11px/16px Georgia;
+	}
+	.block h4, .box h4{
+		font-size: 10px;
+	}
+	.block p, .box p {
+		font: 9px/16px Georgia;
+	}
+	.block{
+		margin:0 0 5% 0;
+	}
+	.box > a img{
+		width: 20%;
+		height: auto;
+	}
+	.box h2{
+		font-size: 10px;
+	}
+	.box ul {
+    	margin: 50% 0 0;
+	}
+	.box li a img{
+		width: 20%;
+		height: auto;
+	}
+
+}
